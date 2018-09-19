@@ -56,14 +56,14 @@ public class Dice {
 	@When("^Dice: User click on Login button$")
 	public void dice_User_click_on_Login_button() throws Throwable {
 		d_btn_login.click();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 	}
 
 	@Then("^Dice: User is on home page$")
 	public void dice_User_is_on_home_page() throws Throwable {
 		String homePage = driver.getTitle();
 		System.out.println(homePage);
-		Assert.assertEquals("Find Jobs: Find your next job and advance your career today | Monster.com", homePage);
+		Assert.assertEquals("Seeker Dashboard - Profile", homePage);
 		
 	}
 
