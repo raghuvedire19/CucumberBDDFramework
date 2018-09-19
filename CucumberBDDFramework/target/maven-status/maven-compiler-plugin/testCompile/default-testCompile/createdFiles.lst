@@ -1,0 +1,6 @@
+TestRun\Runner.class
+stepDefinitions\TestClass.class
+stepDefinitions\CreateCompany.class
+stepDefinitions\Login.class
+jobsiteUpdate\Dice.class
+jobsiteUpdate\Monster.class
