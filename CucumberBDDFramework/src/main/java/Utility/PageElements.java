@@ -23,12 +23,12 @@ public class PageElements {
 	public static final String Tags = "tags";
 	public static final String SaveButton = "//input[@value='Save']";
 
-	// Monster Login Page
+	//Monster Login Page
 	public static final String m_EmailAddress = "EmailAddress";
 	public static final String m_Password = "Password";
 	public static final String m_btn_login = "btn-login";
 	
-	// Monster Home Page
+	//Monster Home Page
 	public static final String m_Profile= "//a[@class='dropdown-toggle navbar-icon-link loginLink2']//span[contains(text(),'Raghavender Reddy Vedire')]";
 	public static final String m_Resume= "//ul[@class='dropdown-menu']//a[contains(text(),'Resumes/Cover')]";
 	
@@ -40,4 +40,18 @@ public class PageElements {
 
 	//Monster Profile Update
 	public static final String m_ProfileUpdateButton = "btn-Resume_Name";
+
+	//Dice Login Page
+	public static final String d_Email = "email";
+	public static final String d_Password = "password";
+	public static final String d_btn_login = "//button[@data-automation-id='sign-in-button']";
+	
+	//Dice Home Page
+	public static final String d_Profile= "editProfile";
+	
+	//Dice Resume Edit
+	public static final String d_ToggleOnOff= "//div[@class='col-md-5 col-lg-5']//div[@class='toggle-switch-handle']";
+
+	//Dice Profile Update
+	public static final String d_ProfileUpdateButton = "//button[@data-ng-if='isOnEditMode']";
 }

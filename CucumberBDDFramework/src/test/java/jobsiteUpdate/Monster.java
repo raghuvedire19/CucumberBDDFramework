@@ -45,57 +45,56 @@ public class Monster {
 	@FindBy(id = PageElements.m_ProfileUpdateButton)
 	private WebElement m_ProfileUpdateButton;
 		
-	@Given("^User is on Monster website$")
-	public void user_is_on_Monster_website() throws Throwable {
+	@Given("^Monster: User is on Monster website$")
+	public void monster_User_is_on_Monster_website() throws Throwable {
 	    driver.manage().window().maximize();
 	    driver.get(url);
 	}
 
-	@When("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_username_and_Password(String username, String password) throws Throwable {
+	@When("^Monster: User enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void monster_User_enters_username_and_Password(String username, String password) throws Throwable {
 		m_EmailAddress.clear();
 		m_EmailAddress.sendKeys(username);
 		m_Password.clear();
 		m_Password.sendKeys(password);
 	}
 	
-	@When("^User click on Login button$")
-	public void user_click_on_Login_button() throws Throwable {
+	@When("^Monster: User click on Login button$")
+	public void monster_User_click_on_Login_button() throws Throwable {
 		m_btn_login.click();
 		Thread.sleep(2000);
 	}
 
-	@Then("^User is on home page$")
-	public void user_is_on_home_page() throws Throwable {
+	@Then("^Monster: User is on home page$")
+	public void monster_User_is_on_home_page() throws Throwable {
 		String homePage = driver.getTitle();
 		System.out.println(homePage);
 		Assert.assertEquals("Find Jobs: Find your next job and advance your career today | Monster.com", homePage);
 		
 	}
 
-	@Then("^User Click on Profile button$")
-	public void user_Click_on_Profile_button() throws Throwable {
+	@Then("^Monster: User Click on Profile button$")
+	public void monster_User_Click_on_Profile_button() throws Throwable {
 		m_Profile.click();
 	}
 
-	@Then("^Select Resumes/Cover Letters$")
-	public void select_Resumes_Cover_Letters() throws Throwable {
+	@Then("^Monster: Select Resumes/Cover Letters$")
+	public void monster_Select_Resumes_Cover_Letters() throws Throwable {
 		m_Resume.click();
 	}
 
-	@Then("^Click on Self Resume link$")
-	public void click_on_Self_Resume_link() throws Throwable {
+	@Then("^Monster: Click on Self Resume link$")
+	public void monster_Click_on_Self_Resume_link() throws Throwable {
 		m_LinEdit.click();
 	}
 
-	@Then("^Click on Settings button$")
-	public void click_on_Settings_button() throws Throwable {
+	@Then("^Monster: Click on Settings button$")
+	public void monster_Click_on_Settings_button() throws Throwable {
 		m_SettingsButton.click();
 	}
 
-	@Then("^Click on Update Name button$")
-	public void click_on_Update_Name_button() throws Throwable {
+	@Then("^Monster: Click on Update Name button$")
+	public void monster_Click_on_Update_Name_button() throws Throwable {
 		m_ProfileUpdateButton.click();
 	}
-
 }
