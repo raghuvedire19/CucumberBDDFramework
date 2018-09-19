@@ -8,10 +8,10 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features= {"Feature/Login.feature", "Feature/CreateCompany.feature"},
+		features= {"Feature/Login.feature", "Feature/CreateCompany.feature", "Feature/JobSiteUpdate.feature"},
 		glue = {"stepDefinitions"},
 		plugin = {"pretty", "html:test-output"},
-		tags= {"@SmokeTest"},
+		tags= {"@FunctionalTest"},
 //		tags= {"@SmokeTest, @RegressionTest"},   ******Execute SmokeTest OR RegressionTest******
 //		tags= {"@SmokeTest","@RegressionTest"},	 ******Execute SmokeTest AND RegressionTest******
 //		tags= {"@SmokeTest","~@RegressionTest"}, ******Execute SmokeTest AND Ignore RegressionTest******

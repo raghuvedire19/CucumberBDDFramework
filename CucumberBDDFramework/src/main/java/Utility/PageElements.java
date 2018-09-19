@@ -22,4 +22,22 @@ public class PageElements {
 	public static final String ZipCode = "postcode";
 	public static final String Tags = "tags";
 	public static final String SaveButton = "//input[@value='Save']";
+
+	// Monster Login Page
+	public static final String m_EmailAddress = "EmailAddress";
+	public static final String m_Password = "Password";
+	public static final String m_btn_login = "btn-login";
+	
+	// Monster Home Page
+	public static final String m_Profile= "//a[@class='dropdown-toggle navbar-icon-link loginLink2']//span[contains(text(),'Raghavender Reddy Vedire')]";
+	public static final String m_Resume= "//ul[@class='dropdown-menu']//a[contains(text(),'Resumes/Cover')]";
+	
+	//Monster Resume Edit
+	public static final String m_LinEdit= "lnkEdit";
+	
+	//Monster Settings
+	public static final String m_SettingsButton = "//i[@data-original-title='SETTINGS']";
+
+	//Monster Profile Update
+	public static final String m_ProfileUpdateButton = "btn-Resume_Name";
 }
