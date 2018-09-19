@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(
 		features= {"Feature/Login.feature", "Feature/CreateCompany.feature", "Feature/JobSiteUpdate.feature"},
-		glue = {"stepDefinitions"},
+		glue = {"stepDefinitions","jobsiteUpdate"},
 		plugin = {"pretty", "html:test-output"},
-		tags= {"@FunctionalTest"},
+		tags= "@FunctionalTest",
 //		tags= {"@SmokeTest, @RegressionTest"},   ******Execute SmokeTest OR RegressionTest******
 //		tags= {"@SmokeTest","@RegressionTest"},	 ******Execute SmokeTest AND RegressionTest******
 //		tags= {"@SmokeTest","~@RegressionTest"}, ******Execute SmokeTest AND Ignore RegressionTest******
@@ -20,5 +20,4 @@ import cucumber.api.junit.Cucumber;
 		dryRun = false
 		)
 public class Runner {
-
 }
