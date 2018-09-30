@@ -39,7 +39,6 @@ public class Configuration {
 				driver = new FirefoxDriver();}
 			else 
 				return driver;
-			
 		}
 		
 		else if (Browser.equalsIgnoreCase("remote")) {
