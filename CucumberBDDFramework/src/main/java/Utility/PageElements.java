@@ -2,6 +2,7 @@ package Utility;
 
 public class PageElements {
 	//Login Page Elements:
+	public static final String TestName = "testname";
 	public static final String UserName = "username";
 	public static final String Password = "password";
 	public static final String LoginButton = "//input[@value='Login']";
